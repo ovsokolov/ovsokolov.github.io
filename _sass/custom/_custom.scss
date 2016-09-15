@@ -1,0 +1,49 @@
+.jamsBefore {
+    border-style: solid;
+    height: 200px; 
+    width: 800px;
+    line-height: 200px;
+}
+
+.jamsAfter {
+    border-style: solid;
+    height: 300px; 
+    width: 800px;
+    display: table;
+    background-image: url("../../img/bloc_jams_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jamsAfterNavi {
+    text-align: center;
+    vertical-align: middle;
+    height: 100%; 
+    width: 50px;
+    line-height: 300px;
+}
+
+
+.naviLeft {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+}
+
+.naviRight {
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+}
+
+.naviLeft:hover {
+    background-color: #eddfe5;
+    cursor: pointer;
+}
+
+.naviRight:hover {
+    background-color: #eddfe5;
+    cursor: pointer;
+}
+
+

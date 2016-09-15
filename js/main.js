@@ -20,3 +20,33 @@ Array.prototype.forEach.call(elements, function(element) {
      element.parentNode.insertBefore(katexElement, element);
   }
 });
+
+var imagePosition = 0;
+
+var blocImages = [
+         { urlImg: "url('../../img/bloc_jams_bg.png')"},
+         { urlImg: "url('../../img/bloc_jams_bg_2.png')" },
+         { urlImg: "url('../../img/bloc_jams_bg_3.png')" }
+     ];
+
+
+function previousImage(event){
+
+    imagePosition--;
+    if(imagePosition < 0){
+        imagePosition = blocImages.length - 1;
+    }
+    var image = blocImages[imagePosition];
+    var parent = document.getElementById("afterContainer");
+    parent.style.backgroundImage = image.urlImg;
+}
+
+function nextImage(event){
+    imagePosition++;
+    if(imagePosition > blocImages.length-1){
+        imagePosition = 0;
+    }
+    var image = blocImages[imagePosition];
+    var parent = document.getElementById("afterContainer");
+    parent.style.backgroundImage = image.urlImg;
+}
